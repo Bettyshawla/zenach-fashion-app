@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Welcome to My Zenach Fashion E-Commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ My E-Commerce App, a full-stack web application built using the MERN stack (MongoDB, Express, React, and Node.js). 
+ This app allows users to browse and purchase products from an online store.
 
-## Available Scripts
+![sc](https://user-images.githubusercontent.com/113690973/211386022-356cf905-6917-426f-a468-e294940a9851.png)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features in my app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Browse a catalog of products with images and descriptions
 
-### `npm test`
+![Screen Shot 2023-01-09 at 2 26 03 PM](https://user-images.githubusercontent.com/113690973/211391384-873ad864-b80d-4a92-bf68-4cce1d73d874.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+2. Add items to a shopping cart and place an order
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screen Shot 2023-01-09 at 2 26 21 PM](https://user-images.githubusercontent.com/113690973/211391465-e28c966c-9bae-40ae-b771-e6885a6a4d48.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Customers can create, update, and delete custom orders
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screen Shot 2023-01-09 at 2 31 12 PM](https://user-images.githubusercontent.com/113690973/211392108-1df9547d-e4bb-4d9e-8882-d53c89fe500e.png)
 
-### `npm run eject`
+# Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Prerequisites
+You will need to install Node.js 
+You will need a MongoDB account
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 1. Clone the repository:
+git clone https://github.com/Bettyshawla/fullstack-app.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Step 2. Install the dependencies:
+npm i
 
-## Learn More
+### Step 3. Config
+create a .env file
+in the .env file make sure to add your MongoDB
+add it in this format
+MONGO_URL=Paste your MongoDB url
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Folder structure
+It has all the frontend code and the full stack app repository has the back end configuration and api calls
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Teminal direction
+Open a split terminal 
 
-### Code Splitting
+### Terminal 1
+- cd in to Fullstack-app & nodemon server.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Terminal 2
+- cd client and npm start
 
-### Analyzing the Bundle Size
+# Directory Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screen Shot 2023-01-09 at 2 12 33 PM](https://user-images.githubusercontent.com/113690973/211388951-7934c79a-9e17-46b0-8771-1c95f101280d.png)
 
-### Making a Progressive Web App
+# Contributions
+I welcome contributions to My E-Commerce App! If you have an idea for a new feature or have found a bug, please open an issue in the GitHub repository. If you would like to contribute code, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ - Fork the repository
+ - Create a new branch for your feature
+ - Write and test your code
+ - Submit a pull request for review
 
-### Advanced Configuration
+## Known Issues
+The app does not currently support payment processing. Orders can be placed but it wont allow users check-out
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Things i would like to improve and add
+- Categorization of items to allow users access their choice instead of going through every item in store
+- Authentication of users
+- Add an Admin
+- Payment validtaion
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##  Credits
+Stack overflow
+React
+Express
+MongoDB
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

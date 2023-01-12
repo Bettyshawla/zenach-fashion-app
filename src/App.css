@@ -1,38 +1,334 @@
 .App {
+  background: url(https://p4.wallpaperbetter.com/wallpaper/961/83/656/silk-white-fabric-softness-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* =========== NAV-BAR && LOGO============= */
+
+nav {
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.75);
+  border-bottom: #070707 solid 2px;
+  
+}
+
+.logo {
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-left: 2rem;
+  color: white;
+  text-shadow: 5px 4px 3px hsla(60, 2%, 3%, 0.771);
+}
+
+.gentle-hover-shake:hover {
+  animation: tilt-shaking .2s 3;
+}
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.nav-gen {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-con a {
+  margin-top: 1rem;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+}
+
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+}
+/*  =========== ABOUT ========== */
+
+
+.About {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: start;
+  font-size: large;
+  font-style: italic;
+}
+
+.about-title {
+  font-style: normal;
+  font-size: 2.4rem;
+  color: rgb(42, 9, 75);
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 6px 8px 2px rgba(139, 131, 127, 0.609);
+}
+
+/* ========== COMPANY ========== */
+
+.meet {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.in-main img {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 35%;
+  height: 20%;
+  float: left;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.in-main {
+  font-size: large;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========== PRODUCT =========== */
+.pdt{
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  margin-right: 5px !important;
+}
+
+.hover01 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* ============= Customize Product ======== */
+.customize-pdt {
+  width: 90%;
+  height: 75vh;
+  margin: auto auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ============== SINGLE PRODUCT =========== */
+.single-product {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.imgs {
+  width: 40%;
+  height: 30%;
+  border-radius: 10%;
+}
+.name {
+  font-weight: bolder;
+}
+.price {
+  font-weight: bolder;
+  font-size: larger;
+}
+.desc {
+  align-content: center;
+  font-weight: 500;
+  padding: auto;
+}
+.des {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 1rem;
+}
+/* =========== FOOTERS ============ */
+footer .top {
+  padding-top: 2rem;
+  background-color: rgba(18, 18, 18, 0.679);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+  padding-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.copyright {
+  color: rgba(255, 255, 255, 0.698);
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.copyright p{
+  font-size: small;
+}
+
+.icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 2rem;
+}
+/* =========== Special ============ */
+.specialAll {
+  height: 100vh;
+}
+
+.sp-title {
+  text-align: start;
+  margin-top: 2rem;
+  padding-left: 2%;
+  margin-bottom: 2rem;
+  color: purple;
+}
+
+.special {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(30px, 1fr);
+  margin-left: 2%;
+}
+
+.box {
+  text-align: start;
+  border: double 13px rgb(128, 121, 109);
+  margin-bottom: 1rem;
+  width: 90vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.71);
+  display: inline-block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.span {
+  font-weight: bolder;
+  color: rgb(122, 33, 110);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.span-special {
+  font-weight: 30px;
+  color: #161001;
 }
+
+.special-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+}
+
+/* ======== HOME =========== */
+
+.home {
+  height: 100vh;
+}
+
+.cust {
+  text-align: start;
+  padding: 1rem 0rem 2rem 1rem;
+}
+
+.column {
+  padding: 5px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+} 
+
+.hover11 figure img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover11 figure:hover img {
+  opacity: 0.5;
+}
+
+.home-container img {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.home-container2 img {
+  border-radius: 20px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.homeimg-women {
+  width: 100vw;
+}
+
+.women-cat {
+  width: 40vw;
+}
+
+.shoe {
+  width: 35vw;
+}
+
+
+/* ============ CART ============ */
+.cart {
+  min-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.cartItem {
+  margin-top: 2rem;
+  margin-bottom: 2rem; 
+  width: 100%;
+  height: 70%;
+  margin-left: 10rem;
+  display: flex;
+}
+
+.cart Button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 2.2rem;
+}
+
+.cartimg {
+  width: 100px;
+  height: 120px;
+}
+
+.empty {
+  height: 71vh;
+}
+
+/* -=========== Check Out =====*/
+.check-out {
+  background-image: url(./components/image/Salmon\ Delicate\ Fashion\ Store\ Logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  
+}
+
+.font {
+  padding-top: 4rem;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: #f0eef0 3px 5px 5px;
+}
+
+
+
